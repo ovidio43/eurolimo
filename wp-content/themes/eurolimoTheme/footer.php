@@ -1,10 +1,10 @@
 
       <footer id="footer">
         <div class="wrapper">
-            <div class="col-md-3">
+            <!--<div class="col-md-3">
                 <h3>Our Car</h3>
-            </div>
-            <div class="col-md-3">			
+            </div>-->
+            <div class="col-md-12">			
                 <h3>Testimonials</h3>                
 				<div class="caption">
 <!--<div class="caption"> Planning a wedding was extremely stressful, but the advice and support from Driven took away the stress of our journeys. Our Chauffeur was wonderful, extremely professional and nothing was too much trouble. He even took a detour to a picturesque spot which we mentioned on the day, very last minute. I’ll certainly be recommending them to all my friends. Thanks for making our day so special!</div>-->
@@ -32,15 +32,15 @@
 				</ul>				
 				</div>
             </div>
-            <div class="col-md-3">
+            <!--<div class="col-md-3">
                 <h3>Our Team</h3>
                 <div class="caption">
                     Our chauffeurs are carefully selected, professional, experienced drivers who understand the sensitivities of the business and entertainment worlds. We ensure a relaxed, safe and comfortable journey.
                 </div>
-            </div>
-            <div class="col-md-3">
+            </div>-->
+            <!--<div class="col-md-3">
                 <h3>Quick Book</h3>
-            </div>
+            </div>-->
         </div>
       </footer>
       <div class="copy">

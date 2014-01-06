@@ -25,7 +25,11 @@
     });
 	
 	$('.bxslider_testimonial').bxSlider({
-      auto: true
+      auto: false,
+	  nextSelector: '#slider-next',
+	  prevSelector: '#slider-prev',
+	  nextText: 'Onward',
+	  prevText: 'Go back'
     });
     
 }());
