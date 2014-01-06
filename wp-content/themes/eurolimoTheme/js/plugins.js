@@ -29,7 +29,11 @@
 	  nextSelector: '#slider-next',
 	  prevSelector: '#slider-prev',
 	  nextText: 'Onward',
-	  prevText: 'Go back'
+	  prevText: 'Go back',
+	  minSlides: 4,
+	  maxSlides: 4,
+	  slideWidth: 240,
+	  slideMargin:0
     });
     
 }());
