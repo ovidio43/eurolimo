@@ -19,7 +19,7 @@
 							$myposts = new WP_Query( $args );
                              if ( $myposts->have_posts() ) : 
                                 while ( $myposts->have_posts() ) : 
-                                    $myposts->the_post();    
+                                    $myposts->the_post();      
                             ?>
                             <li>
                                 <div class="caption"><?php the_content();   ?></div>
