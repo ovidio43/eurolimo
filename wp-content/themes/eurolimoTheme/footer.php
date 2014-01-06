@@ -1,9 +1,9 @@
 
       <footer id="footer">
         <div class="wrapper">
-            <!--<div class="col-md-3">
+            <div class="col-md-3">
                 <h3>Our Car</h3>
-            </div>-->
+            </div>
             <div class="col-md-12">			
                 <h3>Testimonials</h3>                
 				<div class="caption">
@@ -32,15 +32,15 @@
 				</ul>				
 				</div>
             </div>
-            <!--<div class="col-md-3">
+            <div class="col-md-3">
                 <h3>Our Team</h3>
                 <div class="caption">
                     Our chauffeurs are carefully selected, professional, experienced drivers who understand the sensitivities of the business and entertainment worlds. We ensure a relaxed, safe and comfortable journey.
                 </div>
-            </div>-->
-            <!--<div class="col-md-3">
+            </div>
+            <div class="col-md-3">
                 <h3>Quick Book</h3>
-            </div>-->
+            </div>
         </div>
       </footer>
       <div class="copy">
