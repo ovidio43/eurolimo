@@ -23,6 +23,7 @@
     $('.bxslider').bxSlider({
       auto: true
     });
+	
     
 }());
 
