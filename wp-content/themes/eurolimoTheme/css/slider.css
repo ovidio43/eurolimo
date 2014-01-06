@@ -1,0 +1,220 @@
+
+/* Slider Style */
+.pxs_container{
+	width:100%;
+	height:459px;
+	position:relative;
+	overflow: hidden;
+	background:transparent url(../images/slider/bg.png) repeat top left;
+}
+#best_lable{
+/*	position: absolute;
+	right: 0;
+	top: -7px;
+	display: block;
+	width: 168px;
+	height: 166px;*/
+	z-index:99;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.pxs_bg{
+	height:459px;
+	background:transparent url(../images/slider/bg_shadow.png) repeat-x top left;
+}
+.pxs_bg div{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:7584px; /*1264px window width times number of images*/
+	height:459px;
+	background-repeat:repeat;
+	background-position:top left;
+	background-color:transparent;
+}
+.pxs_bg .pxs_bg1{
+	/*background-image:url(../images/slider/bg2.png);*/
+	/*left negative 1/8 of ww*/
+}
+.pxs_bg .pxs_bg2{
+	/*background-image:url(../images/slider/bg3.png);*/
+	/*left negative 1/4 of ww*/
+}
+.pxs_bg .pxs_bg3{
+	/*background-image: none;*/
+	/*left negative 1/2 of ww*/
+}
+.pxs_slider_wrapper{
+	display:none;
+}
+.pxs_container ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+ul.pxs_slider{
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:459px;
+}
+ul.pxs_slider li{
+	height:459px;
+	float:left;
+}
+ul.pxs_slider li div.holder{
+	display:block;
+	position:relative;
+	width: 945px;
+	height: 391px;
+	margin:32px auto 0px auto;
+	padding: 16px 0 0 23px;
+	overflow:hidden;
+}
+ul.pxs_slider li div.holder div.mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 968px;
+	height: 407px;
+	background: url(../images/slider/slider_frame.png) no-repeat 0 0;
+}
+ul.pxs_slider li div.holder div.desc{
+	position: relative;
+	width:330px;
+	text-shadow:none;
+	margin:0 0 0 -20px;
+}
+ul.pxs_slider li div.holder div.desc_bg {
+	background: url(../images/slider/desc_bg.png) no-repeat 0 center;
+	padding: 32px 77px 20px 41px;
+	height:auto;
+	float:left;
+}
+
+ul.pxs_slider li div.holder div.desc h4{
+	margin: -9px 0 13px 0;
+	padding: 0;
+	color: #181818;
+	max-width: 250px;
+	text-shadow:none;
+}
+ul.pxs_slider li div.holder div.desc div.desc_text{
+	color: #262626;
+	max-height: 300px;
+	max-width: 210px;
+	overflow: hidden;
+	margin-bottom: 0px;
+	font-size: 11px;
+}
+/*ul.pxs_slider li div.holder div.desc a.desc_details{
+   display: inline-block;
+   height: 15px;
+   position: relative;
+   width: 0;
+   z-index: 3;
+}*/
+ul.pxs_slider li div.holder div.desc a.desc_details{
+	margin:10px 0 0 0;
+	float:left;
+}
+.pxs_thumbnails_holder{
+	width: 100%;
+	position:absolute;
+	top:432px;
+	text-align: center;
+}
+ul.pxs_thumbnails{
+	list-style: none;
+	display: inline;
+	height:14px;
+	overflow: hidden;
+	margin: 0 0 0 0;
+	padding: 0;
+	vertical-align: top;
+}
+ul.pxs_thumbnails li{
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	margin: 1px 3px 0 3px;
+		*zoom: 1;
+		*display:inline;
+		*margin: 0 3px;
+}
+ul.pxs_thumbnails li:hover{
+	background-position: 0 -14px;
+}
+ul.pxs_thumbnails li.selected{
+	background-position: 0 -28px;
+}
+ul.pxs_thumbnails li div{
+	display: none;
+	width: 117px;
+	height: 128px;
+	overflow: hidden;
+	position: absolute;
+	text-align: left;
+	padding: 5px 0 0 5px;
+}
+ul.pxs_thumbnails li:hover div{
+	display: block;
+	left: -53px;
+	top: -131px;
+}
+ul.pxs_thumbnails li:hover div img{
+	width: 110px;
+	height: 110px;
+}
+ul.pxs_thumbnails li:hover div i{
+	display: block;
+	width: 122px;
+	height: 133px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/slider/thumb_mask.png) no-repeat 0 0;
+}
+
+span.pxs_prev, span.pxs_next{
+	display: inline-block;
+	width:18px;
+	height:18px;
+	z-index: 9999;
+	cursor:pointer;
+		*zoom: 1;
+		*display: inline;
+}
+span.pxs_prev{
+	margin-right: 10px;
+}
+span.pxs_next{
+	margin-left: 10px;
+}
+
+.pxs_loading{
+	color:#fff;
+	font-size:0px;
+	padding:15px 15px 15px 50px;
+	position:absolute;	
+	height:76px;
+	width:76px;
+	position:absolute;	
+	background:url(../images/slider/loading-bg.png) no-repeat 10px 50%;
+	top:191px;
+	left:50%;
+	margin-left:-38px;
+	opacity: 0.7;
+}
+.pxs_loading span {
+	z-index:9998;
+	float:left;
+	height:66px;
+	width:80px;	
+	background:url(../images/slider/ajax-loader-2.gif) no-repeat 10px 50%;
+	margin:5px 0 0 -45px;
+}
