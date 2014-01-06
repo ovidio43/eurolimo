@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/bxslider/jquery.bxslider.css">
         
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css?version=<?php echo date('ymdhis'); ?>">
         <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <?php wp_head(); ?>
     </head>
