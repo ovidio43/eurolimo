@@ -33,7 +33,7 @@
 	  minSlides: 4,
 	  maxSlides: 4,
 	  slideWidth: 240,
-	  slideMargin:0
+	  slideMargin:10
     });
     
 }());
