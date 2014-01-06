@@ -1,13 +1,14 @@
 
       <footer id="footer">
         <div class="wrapper">
-            <div class="col-md-3">
+            <!--<div class="col-md-3">
                 <h3>Our Car</h3>
-            </div>
-            <div class="col-md-3">
-                <h3>Testimonials</h3>                
+            </div>-->
+            <div class="col-md-12 no-padding">
+                <h3>Testimonials</h3><div class="outside-controls-direction"><p><span id="slider-prev"></span> | <span id="slider-next"></span></p></div>
+				<div class="caption">
 <!--<div class="caption"> Planning a wedding was extremely stressful, but the advice and support from Driven took away the stress of our journeys. Our Chauffeur was wonderful, extremely professional and nothing was too much trouble. He even took a detour to a picturesque spot which we mentioned on the day, very last minute. I’ll certainly be recommending them to all my friends. Thanks for making our day so special!</div>-->
-				<ul class="bxslider">
+				<ul class="bxslider_testimonial">
 				<?php
 							$type = 'testimonials';
 							$args=array(
@@ -22,15 +23,16 @@
                                     $myposts->the_post();      
                             ?>
                             <li>
-                                <div class="caption"><?php the_content();   ?></div>
+                                <p><?php echo substr(get_the_content(),0,275);?></p>
 								<span class="autor"><?php the_title(); ?></span>
                             </li>
                             <?php endwhile;?>                            
                             <?php endif; ?>
                             <?php wp_reset_query(); ?>					
-				</ul>                
+				</ul>				
+				</div>
             </div>
-            <div class="col-md-3">
+            <!--<div class="col-md-3">
                 <h3>Our Team</h3>
                 <div class="caption">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -38,7 +40,7 @@
             </div>
             <div class="col-md-3">
                 <h3>Quick Book</h3>
-            </div>
+            </div>-->
         </div>
       </footer>
       <div class="copy">

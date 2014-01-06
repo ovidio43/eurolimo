@@ -24,6 +24,17 @@
       auto: true
     });
 	
+	$('.bxslider_testimonial').bxSlider({
+      auto: false,
+	  nextSelector: '#slider-next',
+	  prevSelector: '#slider-prev',
+	  nextText: 'Onward',
+	  prevText: 'Go back',
+	  minSlides: 3,
+	  maxSlides: 4,
+	  slideWidth: 230,
+	  slideMargin:10
+    });
     
 }());
 
