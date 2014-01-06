@@ -21,6 +21,6 @@
       <header id="header">
         <div class="wrapper">
             <a href="" id="logo" alt="Euro Limo DC"> <img src="<?php echo get_template_directory_uri(); ?>/img/logo_euro.png"></a>
-            <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'primary-navigation', 'container' => false)); ?>
+            <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => '', 'container' => 'div','items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>','container_class' => 'primary-navigation',)); ?>
         </div>
       </header>

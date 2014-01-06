@@ -3,7 +3,8 @@
 function custom_post_type_init() {
     $post_types = array(
         array("slug" => "flet", "plural" => "Flet cars", "singular" => "Flet Cars", "rewrite" => "flet", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail')),
-        array("slug" => "Services", "plural" => "services", "singular" => "service", "rewrite" => "song", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail'))
+        array("slug" => "services", "plural" => "Services", "singular" => "Service", "rewrite" => "song", "public" => true, "archive" => true, "supports" => array('title', 'editor', 'thumbnail')),
+        array("slug" => "testimonials", "plural" => "Testimonials", "singular" => "Testimonial", "rewrite" => "song", "public" => true, "archive" => true, "supports" => array('title', 'editor'))
         
     );
 
