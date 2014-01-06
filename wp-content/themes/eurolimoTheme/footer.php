@@ -23,7 +23,7 @@
                                     $myposts->the_post();      
                             ?>
                             <li>
-                                <?php echo substr(get_the_content(),390);   ?>
+                                <?php echo substr(get_the_content(),300);   ?>
 								<span class="autor"><?php the_title(); ?></span>
                             </li>
                             <?php endwhile;?>                            
