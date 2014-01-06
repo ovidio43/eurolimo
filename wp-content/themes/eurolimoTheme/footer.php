@@ -27,8 +27,7 @@
                             </li>
                             <?php endwhile;?>                            
                             <?php endif; ?>
-                            <?php wp_reset_query(); ?>
-					<li><div class="caption"></div></li>
+                            <?php wp_reset_query(); ?>					
 				</ul>                
             </div>
             <div class="col-md-3">
