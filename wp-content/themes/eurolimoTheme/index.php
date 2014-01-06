@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
       <section id="main-slider">
           <div class="wrapper">
             <ul class="bxslider">
@@ -14,28 +15,27 @@
                 <div class="col-md-4">
                     <h3>Who we are</h3>
                     <div class="caption">
-                    <p>Driven First UK  is a leading UK luxury chauffeur car hire company.  Currently based in London,  we pride ourselves on providing top of the range luxury cars with first class experienced chauffeurs.</p><p>
-        Our quality customer service, and a wide-ranging selection of the finest and most prestigious automobiles in the world, have given us a well-developed and international reputation.</p>                
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered.</p>                
                     </div>
 
                 </div>
                 <div class="col-md-4">
                     <h3>Wath we do</h3>
                     <div class="caption">
-                     <p>Driven First UK can greet you anywhere in the UK with courteous and experienced drivers, luxury cars and chauffeured vehicles to suit your needs.</p><p>
-        Our services are designed to make your transfers a pleasant and effortless experience while you are traveling. You will save time and effort, being able to focus on your tasks or just to relax, while using our services.</p>               
+                     <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p><p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>               
                     </div>
 
                 </div>
                 <div class="col-md-4">
                     <h3>we choose us</h3>
                     <div class="caption">
-        <p>Driven First UK strives to serve the transportation needs of our customers with comfort, safety and convenience. We possess not only the best service but also the best prices.</p>
-        <p>Our goal is to make sure our clients satisfaction with the services ensures all parties are returning customers. As our client, we believe that you deserve nothing other than the best in comfort.</p>                
+        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>                
                     </div>
                 </div>
             </div>
-        
+        <?php echo $_SERVER['DOCUMENT_ROOT'];
+        $_SERVER['DOCUMENT_ROOT'];?>
             <div class="wrapper">
                 
             <div class="col-md-12"><h3>Services</h3></div> 

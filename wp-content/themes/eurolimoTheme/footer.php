@@ -33,7 +33,7 @@
             <div class="col-md-3">
                 <h3>Our Team</h3>
                 <div class="caption">
-                    Our chauffeurs are carefully selected, professional, experienced drivers who understand the sensitivities of the business and entertainment worlds. We ensure a relaxed, safe and comfortable journey.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </div>
             </div>
             <div class="col-md-3">
