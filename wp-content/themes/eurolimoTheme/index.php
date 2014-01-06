@@ -39,9 +39,9 @@
             <div class="wrapper">
                 
             <div class="col-md-12"><h3>Services</h3></div> 
-                <!--<div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv1.jpg"></div>
-                <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv2.jpg"></div>
-                <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv3.jpg"></div> -->
+                <!--<div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv1.jpg"></div>
+                <div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv2.jpg"></div>
+                <div class="col-md-4"><img src="<?php // echo get_template_directory_uri(); ?>/img/serv3.jpg"></div>-->
 
 				<?php
 							$type = 'services';
@@ -58,12 +58,12 @@
 									$featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'large',false);?>									
                             ?>
                             <div class="col-md-4">
-                                <a href="<?php echo get_permalink( get_the_ID() ); ?>"><img src="<?php echo $featured['0'];?>" title="<?php the_title();?>"></a>
+                                <a href="<?php echo get_permalink( get_the_ID() );?>"><img src="<?php echo $featured['0'];?>" title="<?php the_title();?>"></a>
 							</div>
                             <?php endwhile;?>                            
                             <?php endif; ?>
                             <?php wp_reset_query(); ?>					
-				</ul>	
+				
 				
 				
 				
