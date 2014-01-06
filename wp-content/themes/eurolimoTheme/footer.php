@@ -4,10 +4,11 @@
             <div class="col-md-3">
                 <h3>Our Car</h3>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3">			
                 <h3>Testimonials</h3>                
+				<div class="caption">
 <!--<div class="caption"> Planning a wedding was extremely stressful, but the advice and support from Driven took away the stress of our journeys. Our Chauffeur was wonderful, extremely professional and nothing was too much trouble. He even took a detour to a picturesque spot which we mentioned on the day, very last minute. I’ll certainly be recommending them to all my friends. Thanks for making our day so special!</div>-->
-				<ul class="bxslider">
+				<ul class="bxslider_testimonial">
 				<?php
 							$type = 'testimonials';
 							$args=array(
@@ -22,13 +23,14 @@
                                     $myposts->the_post();      
                             ?>
                             <li>
-                                <div class="caption"><?php the_content();   ?></div>
+                                <?php the_content();   ?>
 								<span class="autor"><?php the_title(); ?></span>
                             </li>
                             <?php endwhile;?>                            
                             <?php endif; ?>
                             <?php wp_reset_query(); ?>					
-				</ul>                
+				</ul>				
+				</div>
             </div>
             <div class="col-md-3">
                 <h3>Our Team</h3>

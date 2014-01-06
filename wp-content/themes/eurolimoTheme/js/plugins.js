@@ -24,6 +24,9 @@
       auto: true
     });
 	
+	$('.bxslider_testimonial').bxSlider({
+      auto: true
+    });
     
 }());
 
