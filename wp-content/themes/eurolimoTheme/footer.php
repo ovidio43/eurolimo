@@ -5,7 +5,7 @@
                 <h3>Our Car</h3>
             </div>-->
             <div class="col-md-12 no-padding">
-                <h3>Testimonials</h3> <div class="outside-controls-direction"><p><span id="slider-prev"></span> | <span id="slider-next"></span></p></div>
+                <h3>Testimonials</h3> <div class="outside-controls-direction"><p><span id="slider-prev"></span><span id="slider-next"></span></p></div>
 				<div class="caption">
 <!--<div class="caption"> Planning a wedding was extremely stressful, but the advice and support from Driven took away the stress of our journeys. Our Chauffeur was wonderful, extremely professional and nothing was too much trouble. He even took a detour to a picturesque spot which we mentioned on the day, very last minute. I’ll certainly be recommending them to all my friends. Thanks for making our day so special!</div>-->
 				<ul class="bxslider_testimonial">
