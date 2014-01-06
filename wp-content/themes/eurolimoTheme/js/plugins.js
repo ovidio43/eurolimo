@@ -32,7 +32,7 @@
 	  prevText: 'Go back',
 	  minSlides: 3,
 	  maxSlides: 4,
-	  slideWidth: 240,
+	  slideWidth: 230,
 	  slideMargin:10
     });
     
