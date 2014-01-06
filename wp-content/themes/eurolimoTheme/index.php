@@ -41,11 +41,11 @@
             <div class="col-md-12"><h3>Services</h3></div> 
                 <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv1.jpg"></div>
                 <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv2.jpg"></div>
-                <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv3.jpg"></div>
-                <div class="col-md-12"><img src="<?php echo get_template_directory_uri(); ?>/img/banner.jpg"></div>
-                <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv1.jpg"></div>
-                <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv2.jpg"></div>
-                <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv3.jpg"></div>            
+                <div class="col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/img/serv3.jpg"></div>                
+				<!--<div class="col-md-12"><img src="<?php //echo get_template_directory_uri(); ?>/img/banner.jpg"></div>
+                <div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv1.jpg"></div>
+                <div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv2.jpg"></div>
+                <div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv3.jpg"></div>-->
             </div>
         </div>
       </section>
