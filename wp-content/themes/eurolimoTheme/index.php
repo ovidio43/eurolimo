@@ -54,11 +54,7 @@
         $_SERVER['DOCUMENT_ROOT'];?>
             <div class="wrapper">
                 
-            <div class="col-md-12"><h3>Services</h3></div> 
-                <!--<div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv1.jpg"></div>
-                <div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv2.jpg"></div>
-                <div class="col-md-4"><img src="<?php // echo get_template_directory_uri(); ?>/img/serv3.jpg"></div>-->
-
+            <div class="services col-md-12"><h3>Services</h3> 
 				<?php
 							$type = 'services';
 							$args=array(
@@ -74,15 +70,14 @@
 									$featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'large',false);?>									                           
                             <div class="col-md-4">
                                 <a href="<?php echo get_permalink( get_the_ID() );?>"><img src="<?php echo $featured['0'];?>" title="<?php the_title();?>"></a>
+								<h3><?php the_title();?></h3>
 							</div>
                             <?php endwhile;?>                            
                             <?php endif; ?>
-                            <?php wp_reset_query(); ?>									
-				<!--<div class="col-md-12"><img src="<?php //echo get_template_directory_uri(); ?>/img/banner.jpg"></div>
-                <div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv1.jpg"></div>
-                <div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv2.jpg"></div>
-                <div class="col-md-4"><img src="<?php //echo get_template_directory_uri(); ?>/img/serv3.jpg"></div>-->
+                            <?php wp_reset_query(); ?>				
             </div>
+            
+			</div>
         </div>
       </section>
  <?php
