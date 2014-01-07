@@ -17,7 +17,7 @@
 						$myposts->the_post();   
 						$featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'large',false);?>
 								<li>
-									<img src="<?php echo $featured['0'];?>" title="<?php the_title();?>">
+									<img src="<?php echo $featured['0'];?>" title="<?php the_title();?>" alt="<?php the_title();?>">
 								</li>
                     <?php endwhile;?>                            
 				<?php endif; ?>
