@@ -54,7 +54,7 @@
         $_SERVER['DOCUMENT_ROOT'];?>
             <div class="wrapper">
                 
-            <div class="services col-md-12"><h3>Services</h3> 
+            <div class="services col-md-12 no-padding"><h3>Services</h3> 
 				<?php
 							$type = 'services';
 							$args=array(
