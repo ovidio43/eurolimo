@@ -23,7 +23,7 @@
 							
 							if( $images ): 
 			?>
-							<div class="wrapper">
+							<div id="slider" class="flexslider">
 								<ul class="bxslider">
 									<?php foreach( $images as $image ): ?>
 										<li>
