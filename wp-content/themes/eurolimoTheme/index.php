@@ -10,7 +10,7 @@
 				  'post_status' => 'publish',
 				   'orderby' => 'rand',
 				  'order' => 'DESC',
-				  'posts_per_page'=>3);								 
+				  'posts_per_page'=>-1);								 
 				$myposts = new WP_Query( $args );
 				 if ( $myposts->have_posts() ) : 
 					while ( $myposts->have_posts() ) : 
