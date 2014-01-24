@@ -50,8 +50,8 @@
                     </div>
                 </div>
             </div>
-        <?php echo $_SERVER['DOCUMENT_ROOT'];
-        $_SERVER['DOCUMENT_ROOT'];?>
+        <?php //echo $_SERVER['DOCUMENT_ROOT'];
+        //$_SERVER['DOCUMENT_ROOT'];?>
             <div class="wrapper">
                 
             <div class="services col-md-12 no-padding"><h3>Services</h3> 
