@@ -29,24 +29,23 @@
       <div class="wrap-main">
           <div class="wrapper">
                 <div class="col-md-4">
-                    <h3>Who we are</h3>
+                    <h3><?php the_field("first_title_home_text","option");?></h3>
                     <div class="caption">
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered.</p>                
+                    <?php the_field("first_block_home_text","option");?>                
                     </div>
 
                 </div>
                 <div class="col-md-4">
-                    <h3>Wath we do</h3>
+                    <h3><?php the_field("second_title_home_text","option");?> </h3>
                     <div class="caption">
-                     <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p><p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>               
+                     <?php the_field("second_block_home_text","option");?>               
                     </div>
 
                 </div>
                 <div class="col-md-4">
-                    <h3>we choose us</h3>
+                    <h3><?php the_field("thirth_title_home_text","option");?> </h3>
                     <div class="caption">
-        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>                
+        <?php the_field("thirth_block_home_text","option");?>                 
                     </div>
                 </div>
             </div>
@@ -56,7 +55,7 @@
                 
             <div class="services col-md-12 no-padding"><h3>Services</h3> 
 				<?php
-							$type = 'services';
+							$type = 'fleet_services';
 							$args=array(
 							  'post_type' => $type,
 							  'post_status' => 'publish',
@@ -80,6 +79,4 @@
 			</div>
         </div>
       </section>
- <?php
-get_footer();
- ?>
+<?php get_footer(); ?>

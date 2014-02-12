@@ -1,6 +1,6 @@
 <div class="sidebar services">
 					<?php
-							$type = 'services';
+							$type = 'fleet_services';
 							$args=array(
 							  'post_type' => $type,
 							  'post_status' => 'publish',
