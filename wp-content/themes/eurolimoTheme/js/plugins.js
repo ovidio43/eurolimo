@@ -21,6 +21,7 @@
     }
 
     $('.bxslider').bxSlider({
+    captions: true,
       auto: true
     });
 	
@@ -32,6 +33,7 @@
 	  prevText: 'Go back',
 	  minSlides: 3,
 	  maxSlides: 4,
+
 	  slideWidth: 230,
 	  slideMargin:10
     });
