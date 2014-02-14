@@ -22,49 +22,101 @@ get_header(); ?>
             ?>
              <div class="wrap-form">
                  <form>
-                 <h1>Choose Vehicle </h1>
-                     <input type="radio" name="choose-vehicle"> Landrover
-                     <input type="radio" name="choose-vehicle"> Mercedez Benz GL550
+                     <h1>Choose Vehicle </h1>
+                     <div class="input_radio">
+                            <div class="input_radio_float">
+                               <span class="block_radio"></span>                         
+                               <input type="radio" name="choose-vehicle"> 
+                               <span class="imput_name">Landrover</span>
+                            </div>
+                            <div class="input_radio_float">
+                                <span class="block_radio_one"> </span>                    
+                                <input type="radio" name="choose-vehicle"> 
+                                <span class="imput_name">Mercedez Benz GL550</span>
+                            </div>
+                     </div>
                      <h1>Trip Type</h1>
-                     <input type="radio" name="trip-type"> Single Destination
-                     <input type="radio" name="trip-type"> Multiple Destinations
-                     <input type="radio" name="trip-type"> Hourly / As Directed
-                     <input type="radio" name="trip-type"> Multi-Day
+                     <ul class="trip_type">
+                         <li><input type="radio" name="trip-type"> Single Destination</li>
+                         <li><input type="radio" name="trip-type"> Multiple Destinations</li>
+                         <li><input type="radio" name="trip-type"> Hourly / As Directed</li>
+                         <li><input type="radio" name="trip-type"> Multi-Day</li>
+                     </ul>
                      <h1>Starting Address</h1>
-                     Pickup Address *
-                     <input type="text" name="">
-                     Pickup City *
-                     <input type="text" name="">
-                     Pickup State *
-                     <select><option>-please select</option></select>
+                     <ul class="block_imputs">
+                        <li>
+                             Pickup Address *<br>
+                             <input type="text" name="" class="imput_address">
+                        </li>
+                        <li>                         
+                             Pickup City * <br>
+                             <input type="text" name="" class="imput_address">
+                        </li>
+                        <li>
+                             Pickup State * <br>
+                             <select><option>-please select</option></select>
+                        </li>
+                      </ul>   
                      <h1>Destination</h1>
-                     Destination Address *
-                     <input type="text" name="">
-                     Destination City *
-                     <input type="text" name="">
-                     Destination State *
-                     <select><option>-please select</option></select>
+                     <ul class="block_imputs">
+                        <li>
+                             Destination Address * <br>
+                             <input type="text" name="" class="imput_address">
+                        </li>
+                        <li>                         
+                             Destination City *<br>
+                             <input type="text" name="" class="imput_address">
+                        </li>
+                        <li>
+                             Destination State *<br>
+                            <select><option>-please select</option></select>
+                        </li>
+                      </ul>   
+
                      <h1>Contact Info</h1>
-                     First Name *
-                     <input type="text" name="">
-                     Last Name *
-                     <input type="text" name="">
-                     Email *
-                     <input type="email" name="">
-                     Phone number *
-                     <input type="text" name="">
+                     <ul class="block_dates_imputs">
+                        <li>
+                             First Name *<br>
+                             <input type="text" name="">
+                        </li>
+                        <li>                         
+                             Last Name *<br>
+                             <input type="text" name="">
+                        </li>
+                        <li>
+                             Email *<br>
+                            <input type="email" name="">
+                        </li>
+                        <li>
+                            Phone number * <br>
+                            <input type="text" name="" class="cfone" >
+                        </li>
+                      </ul>   
+
                      <h1>How did you hear about us?</h1>
-                     <select><option>-please select</option></select>
-                    If other, where:
-                     <input type="text" name="">
+
+                     <ul class="block_dates_imputs">
+                        <li>
+                             If other, where: <br>
+                             <select><option>-please select</option></select>
+                        </li>
+                        <li>                         
+                            <br>
+                            <input type="text" name="">
+                        </li>
+                    </ul>
                      <h1>Additional Comments</h1>
-                     <textarea></textarea>
-                     <input type="check" name="">Send me news and special offers.
-                     <input type="submit" name="" value="sumit request">
-
-
-
-
+                      <ul class="block_dates_end">
+                            <li>
+                                 <textarea></textarea>
+                            </li>
+                            <li>                         
+                              <input type="checkbox" name="">  Send me news and special offers.  
+                            </li>
+                            <li>
+                                <input type="submit" name="" value="sumit request" class="submit">
+                            </li>
+                    </ul>
                  </form>
              </div>   
             </div>
