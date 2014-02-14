@@ -21,7 +21,6 @@
     }
 
     $('.bxslider').bxSlider({
-    captions: true,
       auto: true
     });
 	
