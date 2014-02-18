@@ -48,6 +48,33 @@ b, strong {
 #main-slider{
 	padding: 0px 0;
 	border-bottom: 1px solid #555;
+	.caption-slide{
+		position: absolute;
+		font-size: 32px;
+		font-family:'Nova Square', 'Lucida Grande', Arial, san-serif;
+		z-index: 10;
+		padding: 10px;
+		top: 20%;
+		display: inline-block;
+		&.right{
+			right:0;
+			-webkit-border-top-left-radius: 5px;
+			-webkit-border-bottom-left-radius: 5px;
+			-moz-border-radius-topleft: 5px;
+			-moz-border-radius-bottomleft: 5px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;			
+		}
+		&.left{
+			left:0;
+			-webkit-border-top-right-radius: 5px;
+			-webkit-border-bottom-right-radius: 5px;
+			-moz-border-radius-topright: 5px;
+			-moz-border-radius-bottomright: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;			
+		}
+	}
 }
 #main-section{
 	overflow: hidden;
@@ -231,10 +258,6 @@ b, strong {
 .item{ position:relative; }
 .services {
 	.service-img{
-		height: 150px;
-		overflow: hidden;
-		padding: 0;
-		margin: 0 0 10px 0;
 		img{
 			border:2px solid #636363; 
 			width: 100%;
@@ -247,7 +270,7 @@ b, strong {
 			right: 0;
 			bottom: 0;
 			padding: 0.25em 0 0.25em 0;
-			margin: 0 0 0 0;
+			margin: 0 15px;
 			background: #000;
 			-moz-opacity: 0.60;
 			opacity: 0.60;
@@ -289,10 +312,14 @@ span, a{ width: 32px;height: 32px;text-indent: -9999px;z-index: 9999;}
 .primary-navigation {
 	position: absolute;
 	left: 250px;
-	top: 50%;
+	top: 40%;
 	font-size: 15px;
 	margin: 0;
 	padding: 0;
+	ul{
+		padding: 0;
+		margin: 0;
+	}
 }
 
 .primary-navigation .menu-toggle {
