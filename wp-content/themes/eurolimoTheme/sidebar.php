@@ -11,7 +11,7 @@
                              if ( $myposts->have_posts() ) : 
                                 while ( $myposts->have_posts() ) : 
                                     $myposts->the_post();   
-									$featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'large',false);?>									                           
+									$featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'medium',false);?>									                           
                             <div class="item">
                                 <a href="<?php echo get_permalink( get_the_ID() );?>"><img src="<?php echo $featured['0'];?>" title="<?php the_title();?>"></a>
 								<h3 class="service-title"><?php the_title();?></h3>

@@ -1,9 +1,8 @@
 
 @import url(http://fonts.googleapis.com/css?family=Nova+Square);
 body{
-	background-image: url('../img/bg_main.jpg'); 
-	background-attachment: fixed;
-	background-size: cover;
+	background: #0d1826 url('../img/footer_spot.png') no-repeat center 0;
+
 	font: normal 14px/20px 'Nova Square', 'Lucida Grande', Arial, san-serif;
 	color: #fff;
 }
@@ -33,7 +32,7 @@ b, strong {
 	clear: both;
 }
 #header{
-	background-image: url('../img/topline_bg.jpg');
+	
 	height: 111px;
 	width: 100%;
 	.wrapper{
@@ -47,7 +46,6 @@ b, strong {
 }
 #main-slider{
 	padding: 0px 0;
-	border-bottom: 1px solid #555;
 	.caption-slide{
 		position: absolute;
 		font-size: 32px;
@@ -83,6 +81,15 @@ b, strong {
 		overflow: hidden;
 		margin-top: 0px;
 		background: url(../img/cont_spot_t.png) no-repeat center 0;	
+		.caption{
+			font-size: 18px;
+			color: #fff;
+			.featured-text{
+				font-style: italic;
+				padding: 20px 0;
+				margin: 10px 0;
+			}
+		}
 		.left-content{
 			float: left;
 			width: 600px;
@@ -207,6 +214,14 @@ b, strong {
 			float: right;
 			width: 300px;
 			margin: 30px 0 0 0;
+			.item{
+				img{
+					width: 100%;
+				}
+				h3{
+					margin: 0;
+				}
+			}
 		}
 	}
 }
@@ -244,7 +259,7 @@ b, strong {
 	width: 100%;
 	margin: 30px 0 0 0;
 	min-height: 150px;
-	background: #0d1826 url('../img/footer_spot.png') no-repeat center 0;
+	
 	padding-bottom: 35px;	
 }
 .copy {

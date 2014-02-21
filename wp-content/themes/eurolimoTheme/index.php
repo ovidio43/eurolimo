@@ -30,7 +30,7 @@
 <section id="main-section">
     <div class="wrap-main">
         <div class="wrapper">
-            <div class="col-md-12">
+            <div class="col-md-12 no-padding">
 
                     <h3><?php the_field("first_title_home_text", "option"); ?> </h3>
                     <div class="caption">
@@ -51,7 +51,7 @@
                 if ($myposts->have_posts()) :
                     while ($myposts->have_posts()) :
                         $myposts->the_post();
-                        $featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large', false);
+                        $featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'medium', false);
                         ?>                                            
                         <div class="col-md-4 service-img">
                             <a href="<?php echo get_permalink(get_the_ID()); ?>"><img src="<?php echo $featured['0']; ?>" title="<?php the_title(); ?>"></a>
