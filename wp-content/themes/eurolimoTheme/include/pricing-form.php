@@ -22,16 +22,30 @@
 <form action="" method="post" id="ss-form">
     <h1>Choose Vehicle </h1>
     <div class="input_radio">
+        <?php
+        $type = 'flet';
+        $args = array(
+            'post_type' => $type,
+            'post_status' => 'publish',
+            'orderby' => 'rand',
+            'order' => 'DESC',
+            'posts_per_page' => -1);
+        $myposts = new WP_Query($args);
+        if ($myposts->have_posts()) :
+            while ($myposts->have_posts()) :
+                $myposts->the_post();
+                $featured = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'medium', false);
+                ?>                                            
+
         <div class="input_radio_float">
-            <span class="block_radio"></span>                         
-            <input type="radio" name="choose-vehicle" value="Landrover"> 
-            <span class="imput_name">Landrover</span>
-        </div>
-        <div class="input_radio_float">
-            <span class="block_radio_one"> </span>                    
-            <input type="radio" name="choose-vehicle" value="Mercedez Benz GL550"> 
-            <span class="imput_name">Mercedez Benz GL550</span>
-        </div>
+            <span class="block_radio" style="background-image:url(<?php echo $featured['0']; ?>);"></span>                         
+            <input type="radio" name="choose-vehicle" value="<?php the_field('thumbnail_headline_text'); ?>"> 
+            <span class="imput_name"><?php the_field('thumbnail_headline_text'); ?></span>
+        </div>                
+            <?php endwhile; ?>                            
+        <?php endif; ?>
+        <?php wp_reset_query(); ?>
+
     </div>
     <h1>Trip Type</h1>
     <ul class="trip_type">
@@ -121,8 +135,9 @@
             <input type="checkbox" name="Send-me-news">  Send me news and special offers.  
         </li>
         <li>
-            <input type="submit"  value="sumit request" class="submit">
+            <input type="submit"  value="sumit" class="submit">
             <input type="hidden" name="step" value="send">
+            <label class="notice">* Required</label>
         </li>
     </ul>
 </form>

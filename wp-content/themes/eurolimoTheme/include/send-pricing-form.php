@@ -19,9 +19,9 @@ $arrTitles = Array(
     'Send-me-news' => ' Send me news and special offers.'
 );
 if (sendMail($_POST, $arrTitles)) {
-    echo 'Your response has been recorded.';
+    echo 'Thank you for your interest.  A representative will be in contact with you shortly.  If you need to call us our phone number is +1 703-664-0410.';
 } else {
-    echo 'An unknown erro occurred.';
+    echo 'An unknown error occurred.';
 }
 
 function formatArray($array) {

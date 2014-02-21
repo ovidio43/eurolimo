@@ -38,9 +38,9 @@
                     </div>
                       
             </div>
-            <div class="services col-md-12 no-padding"><h3>Services</h3> 
+            <div class="services col-md-12 no-padding"><h3>Our Vehicles</h3> 
                 <?php
-                $type = 'fleet_services';
+                $type = 'flet';
                 $args = array(
                     'post_type' => $type,
                     'post_status' => 'publish',
@@ -55,7 +55,7 @@
                         ?>                                            
                         <div class="col-md-4 service-img">
                             <a href="<?php echo get_permalink(get_the_ID()); ?>"><img src="<?php echo $featured['0']; ?>" title="<?php the_title(); ?>"></a>
-                            <h3 class="service-title"><?php the_title(); ?></h3>
+                            <h3 class="service-title"><?php the_field('thumbnail_headline_text'); ?></h3>
                         </div>
                     <?php endwhile; ?>                            
                 <?php endif; ?>
