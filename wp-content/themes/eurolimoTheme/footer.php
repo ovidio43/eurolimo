@@ -1,4 +1,4 @@
-
+<?php /*?>
 <footer id="footer">
     <div class="wrapper">
         <!--<div class="col-md-3">
@@ -43,8 +43,9 @@
         </div>-->
     </div>
 </footer>
+<?php */?>
 <div class="copy">
-    <div class="wrapper">Euro Limo DC 2013</div>
+    <div class="wrapper">Euro Limo DC 2014</div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

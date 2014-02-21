@@ -20,6 +20,7 @@
     <body <?php body_class(); ?>> 
       <header id="header">
         <div class="wrapper">
+            <span class="top-info" style="top:0;right:0;position:absolute;">info@eurolimodc.com  +1 703-664-0410</span>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logo" alt="Euro Limo DC"> <img src="<?php echo get_template_directory_uri(); ?>/img/logo_euro.png"></a>
             <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => '', 'container' => 'div','items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>','container_class' => 'primary-navigation',)); ?>
         </div>
