@@ -10,13 +10,15 @@ body{
     color: #fff;
 }
 label.error{
-    color: rgb(223, 111, 30);
+    color:#ff0000;
     font-size: 12px;
     font-weight: normal;
     padding-left: 5px;
     padding-right: 5px;
     width: auto;
     z-index: 999;
+    display: block;
+    clear: both;
 }
 .selected-on{
     opacity: 0.3;
@@ -99,12 +101,15 @@ b, strong {
         margin-top: 0px;
         background: url(../img/cont_spot_t.png) no-repeat center 0;	
         .caption{
-            font-size: 18px;
+            font-size: 15px;
             color: #fff;
             .featured-text{
-                font-style: italic;
                 padding: 20px 0;
                 margin: 10px 0;
+            }
+            ul{
+                margin: 20px 0;
+                font-size: 12px;
             }
         }
         .left-content{
@@ -139,7 +144,7 @@ b, strong {
                         label.error{
                             bottom: -56px;
                             position: absolute;
-                            width: 112%;
+                            width: 200px;
                         }
                         label{
                             cursor: pointer;
@@ -505,12 +510,20 @@ b, strong {
     }
     input[type="submit"]{
         background-color: #2a6496;
+        border: 1px solid #2a6496;
         color: #fff;
         font-size: 14px;
-        text-transform: uppercase;
         padding: 5px 20px;
-        border:1px solid #2a6496;
+        text-transform: uppercase;  
     }
+    span.wpcf7-not-valid-tip{
+        font-size: 12px;
+    }   
+
+}
+
+.req{
+    color:#ff0000;
 }
 .bx-wrapper{
     margin: 0 auto 0px;

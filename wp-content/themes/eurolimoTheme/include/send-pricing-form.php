@@ -19,7 +19,7 @@ $arrTitles = Array(
     'Send-me-news' => ' Send me news and special offers.'
 );
 if (sendMail($_POST, $arrTitles)) {
-    echo 'Thank you for your interest.  A representative will be in contact with you shortly.  If you need to call us our phone number is +1 703-664-0410.';
+    echo '<div class="wpcf7-mail-sent-ok wpcf7-response-output" id="send-ok">Thank you for your interest.  A representative will be in contact with you shortly.  If you need to call us our phone number is +1 703-664-0410.</div>';
 } else {
     echo 'An unknown error occurred.';
 }
@@ -42,11 +42,11 @@ function sendMail($data, $titleData) {
             $body.=$value . '<br>';
         }
     }
-    $subject = 'Pricing - LIMO';
+    $subject = 'Euro Limo – Pricing';
 //    $from = 'altra@omnilogic.us';
-    $from = 'jorge.quispe@altra.com.bo';
+    $from = 'info@eurolimodc.com, altra@omnilogic.us';
     $headers .= 'Content-type:text/html;charset=UTF-8 \rn'
-            . 'From: Registration <noreply@niaf.net>\rn';
+            . 'From: Euro Limo – Pricing <info@eurolimodc.com>\rn';
     if (mail($from, $subject, $body, $headers)) {
         return true;
     }

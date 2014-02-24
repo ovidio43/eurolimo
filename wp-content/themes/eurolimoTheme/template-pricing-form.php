@@ -24,11 +24,8 @@ $step = $_POST['step'];
                 ?>
                 <div class="wrap-form">
                     <?php
-                    if ($step == '1' || $step == '') {
                          require_once (get_template_directory() . '/include/pricing-form.php');
-                    } elseif ($step == 'send') {
-                         require_once (get_template_directory() . '/include/send-pricing-form.php');
-                    }
+
                     ?>
                 </div>   
             </div>

@@ -19,7 +19,7 @@
     });
 
 </script>
-<form action="" method="post" id="ss-form">
+<form action="/pricing/#send-ok" method="post" id="ss-form">
     <h1>Choose Vehicle </h1>
     <div class="input_radio">
         <?php
@@ -59,14 +59,14 @@
         <li><input type="radio" name="trip-type" value="Hourly / As Directed" id="op3"><label for="op3"> Hourly / As Directed</label></li>
         <li><input type="radio" name="trip-type" value="Multi-Day" id="op4"><label for="op4"> Multi-Day</label></li>
     </ul>
-    <h1>Starting Address</h1>
+    <h1>Starting address</h1>
     <ul class="block_imputs">
         <li>
             Pickup address <span class="required-ast">*</span><br>
             <input type="text" name="pickup-address" class="imput_address">
         </li>         
     </ul>   
-    <h1>Destination</h1>
+    <h1>Destination address</h1>
     <ul class="block_imputs">
         <li>
             Destination address <span class="required-ast">*</span> <br>
@@ -111,10 +111,19 @@
             <input type="checkbox" name="Send-me-news" checked="">  Send me news and special offers.  
         </li>
         <li>
-            <input type="submit"  value="Sumit" class="submit">
+            <input type="submit"  value="Send" class="submit">
             <input type="hidden" name="step" value="send">
 
         </li>        
     </ul>
     <label class="notice"><span class="required-ast">*</span> Required</label>
+    
+
+    <?php 
+        if ($step == 'send') {
+             require_once (get_template_directory() . '/include/send-pricing-form.php');
+        }
+    ?>        
+    
+
 </form>
