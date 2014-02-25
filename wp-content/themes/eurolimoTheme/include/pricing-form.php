@@ -13,7 +13,11 @@
             },
             messages: {
                 'choose-vehicle': "Please select one option.",
-                'trip-type': "Please select one option."
+                'trip-type': "Please select one option.",
+                'phone-number': {
+                    required: "This field is required.", 
+                    number: "Please enter numbers only"
+                }
             }
         });
     });
@@ -59,17 +63,15 @@
         <li><input type="radio" name="trip-type" value="Hourly / As Directed" id="op3"><label for="op3"> Hourly / As Directed</label></li>
         <li><input type="radio" name="trip-type" value="Multi-Day" id="op4"><label for="op4"> Multi-Day</label></li>
     </ul>
-    <h1>Starting address</h1>
+    <h1>Starting address <span class="required-ast">*</span></h1>
     <ul class="block_imputs">
         <li>
-            Pickup address <span class="required-ast">*</span><br>
             <input type="text" name="pickup-address" class="imput_address">
         </li>         
     </ul>   
-    <h1>Destination address</h1>
+    <h1>Destination address <span class="required-ast">*</span></h1>
     <ul class="block_imputs">
         <li>
-            Destination address <span class="required-ast">*</span> <br>
             <input type="text" name="destination-address" class="imput_address">
         </li>      
     </ul>   

@@ -8,7 +8,7 @@
             $args = array(
                 'post_type' => $type,
                 'post_status' => 'publish',
-                'orderby' => 'rand',
+                'orderby' => 'publish',
                 'order' => 'DESC',
                 'posts_per_page' => -1);
             $myposts = new WP_Query($args);
@@ -44,7 +44,7 @@
                 $args = array(
                     'post_type' => $type,
                     'post_status' => 'publish',
-                    'orderby' => 'rand',
+                    'orderby' => 'publish',
                     'order' => 'DESC',
                     'posts_per_page' => 3);
                 $myposts = new WP_Query($args);
